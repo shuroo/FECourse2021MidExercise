@@ -1,0 +1,94 @@
+body {
+    background-color: white;
+    margin: 0 auto;
+    direction: rtl;
+    text-align: right;
+}
+
+.row {
+    display: flex;
+}
+
+* {
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.search {
+    height: 14px;
+}
+
+.search img {
+    margin-bottom: 0;
+    height: 20px;
+    float: left;
+}
+
+.top-menu {
+    flex-basis: 100%;
+    align-items: stretch;
+    height: 100px;
+    background-color: #848484;
+    border-bottom: 10px solid #828282;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.top-menu .content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+.top-menu .logo {
+    position: relative;
+    top: 30%;
+}
+
+.top-menu nav {
+    color: white;
+    display: flex;
+    align-items: stretch;
+    margin: auto;
+}
+
+.top-menu nav>a {
+    border-right: 1px solid white;
+    padding: 5px;
+    margin: auto;
+}
+
+.cols {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first {
+    height: 355px;
+    flex-basis: 293px;
+    border-radius: 0 0 0 5px;
+}
+
+.second {
+    height: 216px;
+    flex-basis: 293px;
+}
+
+.mishar {
+    background-image: url("images/images/mishar_img.JPG");
+    object-fit: cover;
+    height: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    background-color: #848484;
+    background: rgb(2, 0, 36);
+}
