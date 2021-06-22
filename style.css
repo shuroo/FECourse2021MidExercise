@@ -54,17 +54,20 @@ body {
     top: 20%;
 }
 
-.top-menu nav {
+nav {
     color: white;
     display: flex;
     align-items: stretch;
     margin: auto;
 }
 
-.top-menu nav>a {
+nav>a {
+    color: white;
     border-right: 1px solid white;
     padding: 5px;
     margin: auto;
+    text-decoration: none;
+    font-size: 1em;
 }
 
 .row {
@@ -86,7 +89,30 @@ body {
     background-image: url("images/images/small_cube_bg.png");
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    color: #7e8082;
+    border-radius: 0 20px 0 0;
+    margin-right: 10px;
+}
+
+.second>.item,
+.second>.item h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2em;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.second>.item img {
+    margin: 0 10px 15px 0;
+}
+
+.second>.item a,
+.second>.item p {
+    color: #7e8082;
 }
 
 .first>.item {
@@ -108,7 +134,7 @@ body {
 }
 
 .first .item .bottom_text>.text {
-    padding: 5px;
+    padding: 10px 5px 5px 13px;
     overflow: hidden;
 }
 
@@ -116,8 +142,8 @@ body {
     padding: 0;
 }
 
-.first .item .bottom_text>h3 {
-    padding: 0;
+.first .item .bottom_text>h4 {
+    padding: 5px;
 }
 
 .second>.item p {
@@ -125,10 +151,41 @@ body {
     color: gray;
 }
 
+.second>.item>.text>a {
+    color: #72716d;
+    border: 1px solid blue;
+}
+
+.second>.item>.text>.map {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+img.map {
+    margin-bottom: 5px;
+}
+
+.second>.item>.text {
+    height: 96%;
+}
+
+.second>.item>.text>.map>.content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+
+.second>.item>.text>.map>.content nav {
+    display: inline-block;
+}
+
 .read_more>a,
 .read_more>img {
     float: left;
     color: white;
+    margin-bottom: 5px;
 }
 
 .read_more>img:hover {
@@ -146,7 +203,6 @@ body {
 
 .item {
     background-color: cadetblue;
-    border: 1px solid blue;
 }
 
 .zikuk {
@@ -169,10 +225,10 @@ body {
 
 footer {
     position: fixed;
-    bottom: 2px;
-    height: 70px;
+    bottom: 0;
+    height: 2em;
     background-color: #848484;
-    background: rgb(2, 0, 36);
+    width: 100%;
 }
 
 .clear {
