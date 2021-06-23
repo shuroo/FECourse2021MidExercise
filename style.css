@@ -37,11 +37,7 @@ footer {
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-footer a:nth-last-child(2) {
-    color: red;
+    text-align: center;
 }
 
 footer a:last-child {
@@ -119,32 +115,6 @@ footer nav {
 }
 
 
-/* .top-menu.content>* {
-    display: flex;
-    flex-basis: 100%;
-    border: 1px solid black;
-} */
-
-
-/* .top-menu {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-bottom: 0;
-    border: 1px solid blue;
-} */
-
-
-/* .top-menu .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-bottom: 0;
-    border: 1px solid blue;
-} */
-
-
 /*************************************** Top Menu Classes ****************************************/
 
 .top-menu .logo {
@@ -166,11 +136,6 @@ footer nav {
     margin: auto;
 }
 
-
-/* .top-menu nav a {
-    border-image: url("images/images/menu_sep.png") left no-repeat;
-} */
-
 img.dropbtn.home {
     width: 30px;
     object-fit: contain;
@@ -182,13 +147,15 @@ img.dropbtn.home {
     margin-top: 20px;
 }
 
-nav>a {
+nav a {
     color: white;
     border-right: 1px solid white;
     padding-right: 10px;
     margin: auto;
     text-decoration: none;
     font-size: 1em;
+    display: inline;
+    overflow: hidden;
 }
 
 
@@ -217,10 +184,10 @@ nav>a {
 
 .dropbtn {
     background-color: transparent;
-    font-weight: bold;
     color: white;
-    padding: 16px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: fit-content;
     border: none;
 }
 
