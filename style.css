@@ -387,3 +387,121 @@ img.map {
     object-fit: cover;
     height: 100%;
 }
+
+
+/**********************************************************"Contact-Us" styles: ********************/
+
+.contact_us_wrapper,
+.contact_us_wrapper a {
+    color: #848484;
+    line-height: 150%;
+}
+
+.contact_us_wrapper a {
+    padding: 30px;
+}
+
+.main_form {
+    background: url("images/images/contact_form_bg.png");
+    border-style: solid solid none solid;
+    border-width: 1px;
+    flex-basis: 380px;
+    min-height: 332px;
+    padding: 12px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main_form div {
+    display: inline-block;
+    width: 100%;
+}
+
+.main_form .content_input,
+.main_form .content_input textarea {
+    float: right;
+    color: #6d6d6d;
+    width: 235px;
+    height: 100px;
+    padding: 3px;
+    border: 1px solid #808992;
+}
+
+.main_form button {
+    color: white;
+    background: url("images/images/button_blue.png");
+    height: 30px;
+    padding: 5px;
+    float: left;
+}
+
+.main_form button:hover {
+    color: white;
+    background: none;
+    background-color: yellow;
+    color: black;
+    height: 30px;
+    padding: 5px;
+    float: left;
+}
+
+.main_form input {
+    float: left;
+    width: 50%;
+}
+
+
+/* .col main_form form {
+    line-break: auto;
+    width: 10px;
+    border: 1px solid greenyellow;
+} */
+
+.main_form>div>label {
+    float: right;
+    padding-left: 5px;
+}
+
+.main_form input {
+    float: left;
+}
+
+.main_form input:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.hdr {
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.centrilize {
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.hdr h2 {
+    float: right;
+    border-bottom: 1px solid gray;
+}
+
+.details,
+.more {
+    background: url("images/images/cube_bg.png");
+    width: 248px;
+    height: 142px;
+    padding: 18px 22px 15px;
+}
+
+.contact_us_wrapper h4 {
+    color: blue;
+}
+
+.bld_txt {
+    font-weight: bold;
+}
