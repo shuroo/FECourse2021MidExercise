@@ -92,6 +92,7 @@ footer nav {
     height: 22px;
     margin: 0 3px 0 0;
     border-radius: 0 10px 0 0;
+    border: none;
 }
 
 .search img {
@@ -397,20 +398,34 @@ img.map {
     line-height: 150%;
 }
 
-.contact_us_wrapper a {
-    padding: 30px;
+.contact_us_wrapper .row {
+    justify-content: space-around;
 }
 
 .main_form {
     background: url("images/images/contact_form_bg.png");
-    border-style: solid solid none solid;
     border-width: 1px;
     flex-basis: 380px;
-    min-height: 332px;
-    padding: 12px 18px;
+    min-height: 350px;
+    padding: 7px 22px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.logo .sub-menu {
+    width: 122px;
+    margin-left: 22px;
+    background-color: azure;
+    visibility: hidden;
+    color: black;
+    border: black;
+    text-align: center;
+    height: 70px;
+}
+
+.logo .sub-menu:hover {
+    display: block;
 }
 
 .main_form div {
@@ -418,21 +433,22 @@ img.map {
     width: 100%;
 }
 
-.main_form .content_input,
-.main_form .content_input textarea {
-    float: right;
+#txtarea {
+    float: left;
     color: #6d6d6d;
-    width: 235px;
-    height: 100px;
-    padding: 3px;
+    flex-grow: 1;
+    height: 120px;
+    width: 85%;
+    padding: 5px;
+    margin-top: 5px;
     border: 1px solid #808992;
 }
 
 .main_form button {
     color: white;
     background: url("images/images/button_blue.png");
-    height: 30px;
-    padding: 5px;
+    height: 25px;
+    padding: 2px;
     float: left;
 }
 
@@ -441,8 +457,7 @@ img.map {
     background: none;
     background-color: yellow;
     color: black;
-    height: 30px;
-    padding: 5px;
+    padding: 2px;
     float: left;
 }
 
@@ -450,13 +465,6 @@ img.map {
     float: left;
     width: 50%;
 }
-
-
-/* .col main_form form {
-    line-break: auto;
-    width: 10px;
-    border: 1px solid greenyellow;
-} */
 
 .main_form>div>label {
     float: right;
@@ -474,9 +482,11 @@ img.map {
 }
 
 .hdr {
-    width: 100%;
     padding-top: 20px;
     border-bottom: 1px solid gray;
+    padding-right: 20px;
+    width: 50%;
+    margin-bottom: 21px;
 }
 
 .centrilize {
@@ -486,16 +496,38 @@ img.map {
 }
 
 .hdr h2 {
-    float: right;
+    padding-bottom: 10px;
     border-bottom: 1px solid gray;
+    line-height: 150%;
 }
 
 .details,
 .more {
     background: url("images/images/cube_bg.png");
-    width: 248px;
-    height: 142px;
-    padding: 18px 22px 15px;
+    width: 280px;
+    height: 166px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-break: normal;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+    zoom: 80%;
+}
+
+.details,
+.more h4 {
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.more a {
+    color: blue;
+}
+
+.more {
+    font-weight: bold;
 }
 
 .contact_us_wrapper h4 {

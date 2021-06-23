@@ -13,8 +13,16 @@
 
     <header class="top-menu">
         <div class="content logo">
-            <a href="index.html"><img alt="paz-logo" src="images/images/paz_logo.png">
-            </a>
+            <div>
+                <a href="index.html"><img alt="paz-logo" src="images/images/paz_logo.png">
+                </a>
+            </div>
+            <div>
+                <ul class="sub-menu">
+                    <a href="#">עמוד הבית</a>
+                    <a href="#">צור קשר</a>
+                </ul>
+            </div>
         </div>
         <div class="col menu_search_wrapper">
             <div class="search">
@@ -103,15 +111,13 @@
     </header>
 
     <main class="contact_us_wrapper">
-        <div>
-            <nav>
-                <a>  צור קשר > <a href="index.html">עמוד הבית</a></nav>
-        </div>
+
+
         <div>
             <h2 class="hdr">צור קשר</h2>
         </div>
         <div>
-            <div class="row centrilize">
+            <div class="row">
 
 
                 <form class="col main_form">
@@ -119,25 +125,27 @@
                     <p class="bld_txt">
                         ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :
                     </p>
-                    <p> * השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
+                    <small> * השדות המסומנים בכוכבית (*) הינם שדות חובה</small>
                     <div>
                         <label for="fname">* שם פרטי </label>
-                        <input type="text" id="fname">
+                        <input type="text" id="fname" />
                     </div>
                     <div>
                         <label for="lname">* שם משפחה</label>
-                        <input type="text" id="lname">
+                        <input type="text" id="lname" />
                     </div>
                     <div>
                         <label for="num">* טלפון</label>
-                        <input type="number" id="num">
+                        <input type="number" id="num" />
                     </div>
                     <div>
                         <label for="email">* E-mail</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" />
 
                     </div>
-                    <input type="textarea" id="content_input" placeholder="תוכן הפניה">
+                    <div>
+                        <textarea id="txtarea" placeholder="תוכן הפניה"></textarea>
+                    </div>
                     <div>
                         <button>שלח</button>
                     </div>
@@ -154,8 +162,10 @@
                     <div class="more">
                         <p class="col">
                             <h4> עוד בפז</h4>
-                            <p><a>ליצירת קשר עם דוברות פז</p> <a href="#" >לחצו כאן>></a>
-                                <p> רוצים לעבוד בפז?</p> <a href="#">לחצו כאן>></a>
+
+                            <p>ליצירת קשר עם דוברות פז <a href="#">לחצו כאן>></a></p>
+                            <p>ליצירת קשר עם מנהלת קשרי משקיעים <a href="#">לחצו כאן>></a></p>
+                            <p> רוצים לעבוד בפז? <a href="#">לחצו כאן>></a></p>
 
                     </div>
                 </div>
